@@ -6,7 +6,7 @@ currently i am studying in computer engineer.
 
 ### -coding
 
-### -reading
+### -reading (comic, self help)
 
 ### -weight training
 
