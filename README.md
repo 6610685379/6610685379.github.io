@@ -1,5 +1,7 @@
 # Atipat Chungkajonkiat
 
+This repository is for CN331
+
 currently i am studying in computer engineer.
 
 ## Thing i like to do in my free time.
