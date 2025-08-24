@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Atipat Chungkajonkiat 6610685379</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <style>
+        .spicy-font {
+            font-family: 'Creepster', cursive;
+        }
+
+        /*Spining skibidy animation*/
+        @keyframes spinOut {
+            0% {
+                transform: rotate(0deg) scale(1);
+                opacity: 1;
+            }
+
+            100% {
+                transform: rotate(720deg) scale(0);
+                opacity: 0;
+            }
+        }
+
+        .animate-spin-out {
+            animation: spinOut 7s ease forwards;
+        }
+
+        /* Popup animation */
+        @keyframes popupIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .animate-popup-in {
+            animation: popupIn 0.3s ease-out forwards;
+        }
+
+        body {
+            background-image: url('https://media.discordapp.net/attachments/533284317200252939/1408948221547647146/1198775-3200x1720-desktop-hd-studio-ghibli-wallpaper-photo.jpg?ex=68ab98c9&is=68aa4749&hm=7f33fd7bdd48fd05344f41219c2551760f68ce4f55f290d884013f26673a1a1a&=&format=webp&width=1593&height=856');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+
+    <!--overlay-->
+    <div id="FirstOverlay"
+        class="fixed inset-0 flex flex-col items-center justify-center bg-gradient-to-r from-gray-800 to-gray-600  text-white z-50">
+        <h1 class="text-5xl text-center font-bold mb-4">Sawasdee krub pom <br> Atipat Chungkajonkiat</h1>
+        <p class="text-xl mb-6">Click Click Click Click</p>
+        <button onclick="closeOverlay()"
+            class="px-6 py-3 bg-white text-green-500 font-semibold rounded-lg shadow hover:bg-gray-200 transition">
+            Click me
+        </button>
+    </div>
+
+    <!--popup-->
+    <div id="secretPopup" class="hidden fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
+        <div class="bg-grey-500 rounded-lg shadow-2xl max-w-md w-full mx-4 animate-popup-in">
+            <div class="bg-green-500 text-white p-4 rounded-t-lg">
+                <h3 class="text-xl font-bold flex items-center justify-between">
+                    --------------You Click the button-------------
+
+                </h3>
+            </div>
+            <div class="p-6">
+                <div class="space-y-4">
+                    <div class="bg-gray-300 p-4 rounded-lg">
+                        <h4 class="font-semibold text-green-500 mb-2">I have a love hate relationship with both coding
+                            and climbing</h4>
+                        <p class="text-gray-700">I approach debugging code the same way I approach climbing problems -
+                            step by step( with ai help explain what this or that do ) *sometime i do code from scratch
+                            on my own.</p>
+                    </div>
+
+                    <div class="bg-gray-200 p-4 rounded-lg">
+                        <h4 class="font-semibold text-green-500 mb-2">I love philosophy</h4>
+                        <p class="text-gray-700">Besides Nietzsche, I also love reading Marcus Aurelius (The GOAT) and
+                            modern
+                            philosophy.</p>
+                    </div>
+
+                    <div class="bg-gray-100 p-4 rounded-lg">
+                        <h4 class="font-semibold text-green-500 mb-2"> Goal</h4>
+                        <p class="text-gray-700">Honestly i just want a quiet and peaceful life(get rich enough to not
+                            care about money in general). <br>i also wanted to climb
+                            K2 and Everest mountain is so cruel yet so beautiful its take without give back.</p>
+                    </div>
+
+                    <div class="bg-gray-100 p-4 rounded-lg">
+                        <h4 class="font-semibold text-green-500 mb-2"> Hey </h4>
+                        <p class="text-gray-700">If you are not happy come try climbing then you'll be happy!!</p>
+                    </div>
+                </div>
+
+                <div class="mt-6 text-center">
+                    <button onclick="closeSecretPopup()"
+                        class="px-6 py-2 bg-green-500 text-white rounded-lg hover:from-purple-700 hover:to-pink-700 transition">
+                        Now you know more about me Cool!
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="flex justify-between items-center p-4 bg-gray-600 shadow">
+        <h1 class="text-xl font-bold text-white">6610685379 Atipat Chungkajonkiat</h1>
+        <a href="#" onclick="openSecretPopup()" class="text-white hover:text-green-500 text-xl font-bold">Please
+            Click me :3</a>
+    </nav>
+    <!--handsome??-->
+    <section id="Me" class="max-w-8xl  p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-white bg-opacity-0 rounded-lg shadow">
+            <div class="relative w-full h-[31rem] overflow-hidden rounded mt-2">
+                <img src="https://media.discordapp.net/attachments/533284317200252939/1408920063465230506/F6E1A0B8-BC52-42F8-9A16-AD4F478D824D.jpg?ex=68ab7e8f&is=68aa2d0f&hm=0ed388b6c725328c877275d7383172918ff239f301b8439a599b00810dff77e6&=&format=webp"
+                    class="absolute inset-0 w-full h-full object-cover">
+                <img src="https://media.discordapp.net/attachments/533284317200252939/1408919962160070736/7143528E-48CF-48C8-A548-192A6BAB161B.jpg?ex=68ab7e77&is=68aa2cf7&hm=6389fe1284c36abf1f5d3f42688d0de5840b3e3e1887ae517555a3bb62d797d5&=&format=webp"
+                    class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 hover:opacity-0">
+            </div>
+        </div>
+
+        <!--yapyap y-->
+        <div class="w-full ">
+            <div class="bg-white bg-opacity-85 p-6 rounded-lg">
+                <h3 class="text-2xl font-semibold mb-4">Let me tell you about myself :D</h3>
+                <p class="text-gray-700 text-2xl">
+                    Hello i am Atipat Chungkajonkiat you can call me Frame welcome to my webpage.
+                    <li>I am currently studying computer engineer at Thammasart Engineering School.</li>
+                    <li>I like to read a book, coding, go to a climbing gym in my free time.</li>
+                    <br>
+                    <li>My favorite quote from nietzsche is <br>"To live is to suffer, to survive is to find some
+                        meaning in the suffering"</li>
+                    <br>
+                <div class="flex space-x-4">
+                    <img src="https://media.discordapp.net/attachments/533284317200252939/1408960815599583302/agnes-tachyon-umamusume.gif?ex=68aba483&is=68aa5303&hm=570a811002dade78a78b326cca9a2711d23544d101f8e9fb553c8ebff916ab0a&="
+                        class="w-48 h-48">
+                    <img src="https://media.discordapp.net/attachments/533284317200252939/1408962086565974096/oguri-cap-oguri-cap-dancing.gif?ex=68aba5b2&is=68aa5432&hm=83a337f695d3916bb2b137fa62b516dec77192a7b290307e7af7cded99a25f96&="
+                        class="w-48 h-48">
+                    <img src="https://media.discordapp.net/attachments/533284317200252939/1408962669322567781/horse-umamusume.gif?ex=68aba63d&is=68aa54bd&hm=e8e10f5fa349d70f26459b14863b83b148fc6e04e5d94349cc54f650b13d4e7b&="
+                        class="w-48 h-48">
+                    <img src="https://media.discordapp.net/attachments/533284317200252939/1408962669746065449/umamusume-uma-musume.gif?ex=68aba63d&is=68aa54bd&hm=5a84b82931e9886898579cccc332529c2888180716a65a4a49cf1a3147194cab&="
+                        class="w-48 h-48">
+                </div>
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="max-w-4xl mx-auto p-8 text-center">
+        <div class="bg-white bg-opacity-85 p-6 rounded-lg">
+            <h3 class="text-2xl font-semibold mb-4">Contact</h3>
+            <!--guthib-->
+            <p class="mb-3 spicy-font text-lg">Github : <a href="https://github.com/6610685379"
+                    class="text-blue-500"><img
+                        src="https://media.discordapp.net/attachments/533284317200252939/1408940244199411722/github-logo.png?ex=68ab915b&is=68aa3fdb&hm=f4358ee4a53e8196d2690fc1edc9db6a4af863bd94925fd48ef3d599f5d23e12&=&format=webp&quality=lossless"
+                        class="inline w-6 h-6 ml-2"></a>
+            </p>
+            <!--Ig-->
+            <p class="mb-3 spicy-font text-lg">Instagram : <a href="https://www.instagram.com/frame.atp"
+                    class="text-blue-500"><img
+                        src="https://media.discordapp.net/attachments/533284317200252939/1408940244627361943/instagram.png?ex=68ab915b&is=68aa3fdb&hm=43910c3c6440621b0e57609e91a01fff26695bd0d9f0693c2d9721853d1b3082&=&format=webp&quality=lossless"
+                        class="inline w-6 h-6 ml-2"></a>
+            </p>
+            <!--ลิ้งอิน-->
+            <p class="spicy-font text-lg">linkedin : <a
+                    href="https://www.linkedin.com/in/atipat-อธิภัทร-จึงขจรเกียรติ-5bb179323" class="text-blue-500"><img
+                        src="https://media.discordapp.net/attachments/533284317200252939/1408940243671060630/linkedin.png?ex=68ab915a&is=68aa3fda&hm=f7007ed3192e0fd523d78021b4fee4453ff2ef89d5fd648c5bec9bae03bc3f19&=&format=webp&quality=lossless"
+                        class="inline w-6 h-6 ml-2"></a>
+            </p>
+        </div>
+    </section>
+
+    <!-- JS -->
+    <script>
+        //ปิดอันแรก
+        function closeOverlay() {
+            const overlay = document.getElementById("FirstOverlay");
+            overlay.classList.add("animate-spin-out");
+
+            overlay.addEventListener("animationend", () => {
+                overlay.style.display = "none";
+            }, { once: true });
+        }
+        //หายล่องหน
+        function openSecretPopup() {
+            const popup = document.getElementById("secretPopup");
+            popup.classList.remove("hidden");
+        }
+        //ทำให้ล่องหน
+        function closeSecretPopup() {
+            const popup = document.getElementById("secretPopup");
+            popup.classList.add("hidden");
+        }
+
+        // กดข้างนอกกล่องแล้วกล่องหาย
+        document.getElementById("secretPopup").addEventListener("click", function (e) {
+            if (e.target === this) {
+                closeSecretPopup();
+            }
+        });
+    </script>
+</body>
+
+</html>
